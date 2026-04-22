@@ -17,7 +17,7 @@ This project solves the "Hidden Churn" problem by architecting a three-state sub
 - **Technical Impact:** - **Source-Side Logic:** Moved complex subscription state classification (Active/Pending/Churned) into a SQL View to ensure a "Single Source of Truth" and reduce BI-layer overhead.
   - **Defensive DAX Architecture:** Implemented fail-safe measures using the `DIVIDE` function and strict data-type enforcement to prevent NaN/Infinity errors during period-over-period calculations.
 
-[View SQL & DAX Code](./SaaS-Postgres-Folder) | [See Dashboard Screenshot](./SaaS-Postgres-Folder/dashboard.png)
+[View SQL & DAX Code](https://github.com/pjtheprogrammer/End-to-End-Saas-Revenue-Engine) | [See Dashboard Screenshot](https://github.com/pjtheprogrammer/End-to-End-Saas-Revenue-Engine/blob/main/Screenshot%202026-04-22%20152634.png)
 
 ---
 
@@ -28,7 +28,7 @@ This project solves the "Hidden Churn" problem by architecting a three-state sub
 - **The Solution:** Engineered a centralized data engine that automates the consolidation of disparate regional datasets into a single "Source of Truth."
 - **Technical Impact:** Built a self-maintaining **Power Query** pipeline for instant data transformation and developed dynamic **DAX** monitoring for real-time Net Profit vs. Gross Sales tracking.
 
-[View Project Details](./Global-Sales-Folder)
+[View Project Details](https://github.com/pjtheprogrammer/Global-Sales-Profit-Intelligence-Suite)
 
 ---
 
@@ -40,7 +40,7 @@ This project solves the "Hidden Churn" problem by architecting a three-state sub
 - **Technical Impact:** - **Automated Conversion Engine:** Engineered cross-table logic to eliminate "double-counted" leads and ensure pipeline accuracy.
   - **Operational Leakage Analysis:** Built visual diagnostic tools to pinpoint exact drop-out stages, enabling targeted process improvements.
 
-[View Project Details](./CRM-Sales-Folder)
+[View Project Details](https://github.com/pjtheprogrammer/-CRM-Sales-Funnel-Conversion-Dashboard)
 
 ---
 
@@ -52,7 +52,7 @@ This project solves the "Hidden Churn" problem by architecting a three-state sub
 - **Technical Impact:** - **ETL & Engineering:** Used Power Query to enforce strict schemas and resolve date-type discrepancies.
   - **Advanced DAX:** Authored complex measures using `CALCULATE` and `FILTER` to handle date-range logic for Running Totals.
 
-[View Project Details](./SaaS-Intelligence-Folder)
+[View Project Details](https://github.com/pjtheprogrammer/SaaS-Revenue-Churn-Intelligence-Dashboard)
 
 ---
 
