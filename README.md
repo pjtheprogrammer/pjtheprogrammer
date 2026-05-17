@@ -1,11 +1,28 @@
 # Hi, I'm Paul 👋
-### Analytics Engineer | SQL, Power Query(M) & Power BI Architect
+### Analytics Engineer | SQL, Python, Power Query(M) & Power BI Architect
 
-I build **resilient data pipelines** that bridge the gap between raw database architecture and executive-level insights. I specialize in **Advanced Power Query (M) engineering**, SQL optimization, and **sophisticated Power BI modeling** to transform complex environments into high-performance, interactive dashboards that drive decisions.
+I build **resilient data pipelines** that bridge the gap between raw database architecture and executive-level insights. I specialize in backend data transformations using **Python and optimized SQL**, advanced Power Query (M) engineering, and **sophisticated Power BI modeling** to transform complex, messy environments into high-performance, interactive dashboards that drive decisions.
 
 ---
 
-## 🚀 Featured Project: End-to-End SaaS Revenue Engine
+## 🚀 Featured Project 1: Enterprise Subscription Revenue Audit & Integrity Pipeline
+**Stack:** Python (Pandas) + PostgreSQL + Power BI + DAX
+
+This project solves the "Ghost Revenue" and financial reporting inflation problem caused by upstream CRM/Billing system synchronization failures.
+
+- **The Problem:** Upstream database glitches failed to flip the `auto_renew` flag to false upon customer cancellation (`churn_flag = True`), leading standard financial reports to blindly over-calculate and misreport active Monthly Recurring Revenue (MRR).
+- **The Solution:** Engineered a decoupled dual-view database architecture in PostgreSQL to separate operational metrics from system auditing, utilizing a Python preprocessing layer to programmatically clean and normalize raw files before database ingestion.
+- **Technical Impact:** - **Python Ingestion & Cleansing (Pandas):** Programmatically extracted and processed raw subscription and account datasets; engineered automated data-cleaning rules to drop invalid records with negative revenue anomalies.
+  - **Defensive Data Formatting:** Utilized Pandas to apply an engineering placeholder (`2099-12-31`) to missing attrition dates, standardizing the schema and optimizing downstream SQL date-math calculations.
+  - **Audit View Architecture:** Developed a specialized PostgreSQL view (`v_revenue_inflation_audit`) leveraging targeted conditional logic to isolate discrepancies and calculate cumulative historical "paper leakage" for executive-level review.
+  - **Production View Engine:** Formulated a clean, true revenue reporting view (`v_true_revenue_reporting`) to enforce bulletproof business logic at the source, forcing churned accounts to zero and keeping downstream BI calculations lean and fast.
+  - **Source-Side Optimization:** Shifted heavy analytical workloads from the presentation layer (Power BI) into the database layer, keeping DAX measures basic and optimizing dashboard load times.
+
+[View SQL & Architecture Details](https://github.com/pjtheprogrammer)
+
+---
+
+## 🚀 Featured Project 2: End-to-End SaaS Revenue Engine
 **Stack:** PostgreSQL + Power BI + DAX
 
 This project solves the "Hidden Churn" problem by architecting a three-state subscription model.
@@ -57,12 +74,15 @@ This project solves the "Hidden Churn" problem by architecting a three-state sub
 ---
 
 ## 🛠️ Tech Stack
-- **Data Engineering:** Advanced Power Query (M), PostgreSQL, SQL Server
+- **Data Engineering:** Python, Advanced Power Query (M), PostgreSQL, SQL Server
 - **BI & Visualization:** Power BI (Desktop & Service), Excel (Power Pivot)
-- **Architecture:** ETL/ELT Pipelines, Query Folding Optimization, Relational Modeling
+- **Architecture:** ETL/ELT Pipelines, Data Integrity Auditing, Query Folding Optimization, Relational Modeling
 - **Version Control:** Git, GitHub
 
 ---
+
+## 📬 Connect with me:
+- **Email:** paulefeoku@hotmail.com
 
 ## 📬 Connect with me:
 - **Email:** paulefeoku@hotmail.com
