@@ -84,5 +84,3 @@ This project solves the "Hidden Churn" problem by architecting a three-state sub
 ## 📬 Connect with me:
 - **Email:** paulefeoku@hotmail.com
 
-## 📬 Connect with me:
-- **Email:** paulefeoku@hotmail.com
