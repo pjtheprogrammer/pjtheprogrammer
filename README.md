@@ -1,5 +1,5 @@
 # Hi, I'm Paul 👋
-### Analytics Engineer | SQL, Python, Power Query(M) & Power BI Architect
+### Analytics Engineer | SQL, Python, Power Query (M) & Power BI Architect
 
 I build **resilient data pipelines** that bridge the gap between raw database architecture and executive-level insights. I specialize in backend data transformations using **Python and optimized SQL**, advanced Power Query (M) engineering, and **sophisticated Power BI modeling** to transform complex, messy environments into high-performance, interactive dashboards that drive decisions.
 
@@ -18,7 +18,7 @@ This project solves the "Ghost Revenue" and financial reporting inflation proble
   - **Production View Engine:** Formulated a clean, true revenue reporting view (`v_true_revenue_reporting`) to enforce bulletproof business logic at the source, forcing churned accounts to zero and keeping downstream BI calculations lean and fast.
   - **Source-Side Optimization:** Shifted heavy analytical workloads from the presentation layer (Power BI) into the database layer, keeping DAX measures basic and optimizing dashboard load times.
 
-[View SQL & Architecture Details](https://github.com/pjtheprogrammer)
+[View Project Details](https://github.com/pjtheprogrammer/Enterprise-Subscription-Revenue-Audit-Integrity-Pipeline)
 
 ---
 
@@ -34,42 +34,23 @@ This project solves the "Hidden Churn" problem by architecting a three-state sub
 - **Technical Impact:** - **Source-Side Logic:** Moved complex subscription state classification (Active/Pending/Churned) into a SQL View to ensure a "Single Source of Truth" and reduce BI-layer overhead.
   - **Defensive DAX Architecture:** Implemented fail-safe measures using the `DIVIDE` function and strict data-type enforcement to prevent NaN/Infinity errors during period-over-period calculations.
 
-[View SQL & DAX Code](https://github.com/pjtheprogrammer/End-to-End-Saas-Revenue-Engine) | [See Dashboard Screenshot](https://github.com/pjtheprogrammer/End-to-End-Saas-Revenue-Engine/blob/main/Screenshot%202026-04-22%20152634.png)
+[View Project Details](https://github.com/pjtheprogrammer/End-to-End-Saas-Revenue-Engine)
 
 ---
 
-## 📊 Case Study 1: Global Sales & Profit Intelligence Suite
-**Stack:** Power Query (Advanced ETL) + Power BI + DAX
+## 🚀 Featured Project 3: Supply Chain Routing Efficiency & Anomaly Detection Pipeline
+**Stack:** Python (Pandas/NumPy/Geopy) + PostgreSQL + Power BI
 
-- **The Problem:** Manual reconciliation of 10,000+ global transactions caused massive reporting bottlenecks and delayed visibility into net profit margins.
-- **The Solution:** Engineered a centralized data engine that automates the consolidation of disparate regional datasets into a single "Source of Truth."
-- **Technical Impact:** Built a self-maintaining **Power Query** pipeline for instant data transformation and developed dynamic **DAX** monitoring for real-time Net Profit vs. Gross Sales tracking.
+This project delivers an end-to-end data pipeline designed to programmatically surface operational waste and routing anomalies across 50,000 global delivery orders.
 
-[View Project Details](https://github.com/pjtheprogrammer/Global-Sales-Profit-Intelligence-Suite)
+- **The Problem:** Logistics platforms lack visibility into physical routing overhead, masking hidden inefficiencies when actual dispatch routes wildly exceed baseline distance calculations. 
+- **The Solution:** Engineered an automated geospatial and data cleansing pipeline that quantifies routing delta errors, captures faulty or corrupted order records at the database level, and projects a live regional risk map for supply chain managers.
+- **Technical Impact:**
+  - **Geospatial Feature Engineering:** Utilized Python to parse coordinate data and calculate precise straight-line geodetic profiles; engineered an automated **Distance Delta** metric ($Route\ Distance - Straight\ Line\ Distance$) to dynamically score hub efficiency.
+  - **Defensive Data Cleaning:** Created an automated database filtration layer to isolate upstream system anomalies—such as unassigned orders (null `hub_id` values) and broken numeric ranges (negative weights or distance values)—preserving downstream reporting integrity.
+  - **High-Density Mapping Interface:** Designed a live-connected Power BI geospatial layout utilizing conditional gradient structures anchored directly to the calculated Distance Delta metrics to instantly surface underperforming warehouses.
 
----
-
-## 🎯 Case Study 2: CRM Sales Funnel & Conversion Dashboard
-**Stack:** Power BI + Power Query + Advanced Data Modeling
-
-- **The Problem:** Sales tracking was plagued by "data inflation" and manual errors, making it impossible to identify where deals were "leaking" from the funnel.
-- **The Solution:** Designed a "Dual-State" tracking system and a cohort-based logic engine to monitor deal transitions from Proposal to Closed.
-- **Technical Impact:** - **Automated Conversion Engine:** Engineered cross-table logic to eliminate "double-counted" leads and ensure pipeline accuracy.
-  - **Operational Leakage Analysis:** Built visual diagnostic tools to pinpoint exact drop-out stages, enabling targeted process improvements.
-
-[View Project Details](https://github.com/pjtheprogrammer/-CRM-Sales-Funnel-Conversion-Dashboard)
-
----
-
-## 🔄 Case Study 3: SaaS Revenue & Churn Intelligence
-**Stack:** Power BI + Power Query + Time Intelligence (DAX)
-
-- **The Problem:** Subscription data was trapped in disorganized spreadsheets with inconsistent types and no way to calculate dynamic Active MRR.
-- **The Solution:** Implemented a full-stack BI solution featuring a Star Schema model and a dedicated Calendar table for advanced Time Intelligence.
-- **Technical Impact:** - **ETL & Engineering:** Used Power Query to enforce strict schemas and resolve date-type discrepancies.
-  - **Advanced DAX:** Authored complex measures using `CALCULATE` and `FILTER` to handle date-range logic for Running Totals.
-
-[View Project Details](https://github.com/pjtheprogrammer/SaaS-Revenue-Churn-Intelligence-Dashboard)
+[View Project Details](https://github.com/pjtheprogrammer/Enterprise-Supply-Chain-Routing-Efficiency-Anomaly-Detection-Pipeline)
 
 ---
 
@@ -83,4 +64,3 @@ This project solves the "Hidden Churn" problem by architecting a three-state sub
 
 ## 📬 Connect with me:
 - **Email:** paulefeoku@hotmail.com
-
