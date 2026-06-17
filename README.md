@@ -55,9 +55,9 @@ This project delivers an end-to-end data pipeline designed to programmatically s
 ---
 
 ## 🛠️ Tech Stack
-- **Data Engineering:** Python, Advanced Power Query (M), PostgreSQL, SQL Server
+- **Data Engineering:** Python, Advanced Power Query (M), PostgreSQL, SQL Server, Snowflake, Dagster, CI/CD
 - **BI & Visualization:** Power BI (Desktop & Service), Excel (Power Pivot)
-- **Architecture:** ETL/ELT Pipelines, Data Integrity Auditing, Query Folding Optimization, Relational Modeling
+- **Architecture:** ETL/ELT Pipelines, Data Integrity Auditing, Query Folding Optimization, Relational Modeling, dbt
 - **Version Control:** Git, GitHub
 
 ---
